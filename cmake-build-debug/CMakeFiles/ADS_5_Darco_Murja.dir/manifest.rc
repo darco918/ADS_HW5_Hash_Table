@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/murja/CLionProjects/ADS_5_Darco_Murja/cmake-build-debug/CMakeFiles/ADS_5_Darco_Murja.dir/embed.manifest"
