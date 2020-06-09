@@ -5,7 +5,6 @@
 #ifndef ADS_5_DARCO_MURJA_HASHMAP_H
 #define ADS_5_DARCO_MURJA_HASHMAP_H
 
-
 #include "HashEntry.h"
 
 class HashMap {

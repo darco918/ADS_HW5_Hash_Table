@@ -7,21 +7,21 @@
 #include "HashMap.h"
 #include <iostream>
 
-const int TABLE_SIZE = 10;
+const int mapSize = 10;
 HashMap::HashMap() {
-    table = new HashEntry*[TABLE_SIZE];
+    table = new HashEntry*[mapSize];
 
-    for (int i = 0; i < TABLE_SIZE; i++)
+    for (int i = 0; i < mapSize; i++)
         table[i] = nullptr;
 }
 
 int HashMap::get(int key) {
 
-        int hash = (key % TABLE_SIZE);
+        int hash = (key % mapSize);
 
         while (table[hash] != nullptr && table[hash]->getKey() != key)
 
-            hash = (hash + 1) % TABLE_SIZE;
+            hash = (hash + 1) % mapSize;
 
         if (table[hash] == nullptr) return -1;
         else
@@ -30,22 +30,23 @@ int HashMap::get(int key) {
 
 
 void HashMap::add(int key, int value){
-    int hash = (key % TABLE_SIZE);
-    while (table[hash] != NULL && table[hash]->getKey() != key)
+    int hash = (key % mapSize);
+    while (table[hash] != nullptr && table[hash]->getKey() != key)
 
-        hash = (hash + 1) % TABLE_SIZE;
+        hash = (hash + 1) % mapSize;
 
-    if (table[hash] != NULL)
+    if (table[hash] != nullptr)
 
         delete table[hash];
 
     table[hash] = new HashEntry(key, value);
+
 }
 
 void HashMap::printAll() {
-    for (int i = 0; i < TABLE_SIZE; i++)
+    for (int i = 0; i < mapSize; i++)
         std::cout<<table[i]<<" ";
     std::cout<<"\n";
-    for (int i = 0; i < TABLE_SIZE; i++)
+    for (int i = 0; i < mapSize; i++)
         std::cout<<table[i]->getValue()<<" ";
 }

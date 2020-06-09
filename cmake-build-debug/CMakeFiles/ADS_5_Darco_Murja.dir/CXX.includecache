@@ -6,7 +6,21 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/murja/CLionProjects/ADS_5_Darco_Murja/HashEntry.cpp
+HashEntry.h
 C:/Users/murja/CLionProjects/ADS_5_Darco_Murja/HashEntry.h
+
+C:/Users/murja/CLionProjects/ADS_5_Darco_Murja/HashEntry.h
+
+C:/Users/murja/CLionProjects/ADS_5_Darco_Murja/HashMap.cpp
+cstddef
+-
+cstring
+-
+HashMap.h
+C:/Users/murja/CLionProjects/ADS_5_Darco_Murja/HashMap.h
+iostream
+-
 
 C:/Users/murja/CLionProjects/ADS_5_Darco_Murja/HashMap.h
 HashEntry.h
@@ -15,4 +29,6 @@ C:/Users/murja/CLionProjects/ADS_5_Darco_Murja/HashEntry.h
 C:/Users/murja/CLionProjects/ADS_5_Darco_Murja/main.cpp
 HashMap.h
 C:/Users/murja/CLionProjects/ADS_5_Darco_Murja/HashMap.h
+iostream
+-
 

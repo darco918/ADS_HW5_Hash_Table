@@ -5,7 +5,6 @@
 #ifndef ADS_5_DARCO_MURJA_HASHENTRY_H
 #define ADS_5_DARCO_MURJA_HASHENTRY_H
 
-
 class HashEntry {
 
 private:
@@ -20,6 +19,5 @@ public:
     int getValue();
 
 };
-
 
 #endif //ADS_5_DARCO_MURJA_HASHENTRY_H
